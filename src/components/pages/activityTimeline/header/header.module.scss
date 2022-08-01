@@ -1,0 +1,76 @@
+@import "../../../../styles/breakpoints.scss";
+
+.header {
+  background-color: #f9f9f9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.h1 {
+  font-size: 28px;
+
+  svg {
+    width: 24px;
+    fill: slategray;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.p {
+  color: darkgray;
+  display: flex;
+  align-items: center;
+
+  svg {
+    fill: royalblue;
+    margin-left: 4px;
+    cursor: pointer;
+  }
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  font-size: 21px;
+  color: darkgray;
+
+  svg {
+    fill: darkgray;
+  }
+}
+
+.name {
+  color: royalblue;
+}
+
+.dt {
+  color: darkgray;
+}
+
+@include media-breakpoint-down(md) {
+  .h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    justify-content: center;
+    align-items: center;
+  }
+}
